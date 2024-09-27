@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring True Crime: A Deep Analysis</title>
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #121212;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3.5em; /* Increased title size */
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 3em; /* Increased subtitle size */
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.6em; /* Increased paragraph text size */
+            margin: 15px 0; 
+        }
+
+        .button-container {
+            margin-bottom: 20px;
+        }
+
+        .nav-button {
+            background-color: #6200EE; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 20px; 
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            margin: 5px; 
+        }
+
+        .nav-button:hover {
+            background-color: #3700B3; 
+            transform: scale(1.05);
+        }
+
+        .section {
+            display: none;
+            margin: 20px; 
+        }
+
+        .active {
+            display: block; 
+        }
+
+        .intro-image,
+        .reason-image,
+        .conclusion-image {
+            display: block;
+            margin: 20px auto; 
+            max-width: 40%;  /* Reduced size for the introduction image */
+            border-radius: 10px; 
+            transition: transform 0.3s; 
+        }
+
+        .intro-image:hover,
+        .reason-image:hover,
+        .conclusion-image:hover {
+            transform: scale(1.05); 
+        }
+
+        .comments-section {
+            margin-top: 30px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #submitComment {
+            background-color: #6200EE; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 5px 10px; 
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        #submitComment:hover {
+            background-color: #3700B3; 
+            transform: scale(1.05); 
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .conclusion-images {
+            display: flex; /* Using Flexbox for conclusion images */
+            justify-content: center; /* Center the images */
+            margin: 20px 0;
+        }
+
+        .conclusion-images img {
+            max-width: 45%; /* Width of conclusion images */
+            margin: 0 10px; /* Margin between images */
+        }
+
+        .example-content {
+            margin: 20px 0;
+            display: none; /* Hidden by default */
+        }
+
+        .example-image {
+            display: block;
+            margin: 20px auto; 
+            max-width: 60%; /* Size of example image */
+            border-radius: 10px; 
+            transition: transform 0.3s; 
+        }
+
+        .example-image:hover {
+            transform: scale(1.05); 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Exploring True Crime: A Deep Analysis</h1>
+        </header>
+
+        <div class="button-container">
+            <button class="nav-button" onclick="showSection('introduction')">Introduction</button>
+            <button class="nav-button" onclick="showSection('reason1')">Reason 1</button>
+            <button class="nav-button" onclick="showSection('reason2')">Reason 2</button>
+            <button class="nav-button" onclick="showSection('reason3')">Reason 3</button>
+            <button class="nav-button" onclick="showSection('conclusion')">Conclusion</button>
+        </div>
+
+        <div class="section active" id="introduction">
+            <h2>Introduction</h2>
+            <img src="introduccion1.jpeg" alt="Introduction Image" class="intro-image">
+            <p>True crime has captivated the public's imagination for years, generating a growing interest in the darker aspects of human nature. This phenomenon, which has found its place in literature, film, and television, is not simply a morbid curiosity but an exploration of the fears and anxieties of contemporary society. In this analysis, we will explore three reasons that explain why true crime fascinates so many people, and discuss its impact on society.</p>
+        </div>
+
+        <div class="section" id="reason1">
+            <h2>Reason 1: Human Curiosity</h2>
+            <p>Human curiosity is innate. From childhood, we are driven to understand the world around us, and this includes the darker aspects of human behavior. True crime offers a window into these aspects, allowing us to explore the minds of criminals and the circumstances that led them to act. Through the narrative of these cases, viewers can reflect on what motivates them to commit such horrific acts.</p>
+            <p>Moreover, documentaries and shows about true crime have allowed viewers to learn details about cases that would otherwise remain hidden. This exploration not only satisfies curiosity but also helps us reflect on morality and the decisions people make in extreme situations. True crime stories often present ethical dilemmas that invite us to ask: what would we have done in their place?</p>
+            <button class="nav-button" onclick="showExample('example1')">Example</button>
+            <div class="example-content" id="example1">
+                <img src="razon 1 ejemplo 1.jpg" alt="Example of The Jinx" class="example-image">
+                <p>An iconic case that illustrates this curiosity is that of Robert Durst, whose case was explored in the documentary "The Jinx." The series attracted millions of viewers eager to understand the mind of an alleged killer and sparked deep discussions about guilt, madness, and impunity. The mix of mystery and the analysis of the criminal's psyche kept the audience on the edge of their seats, highlighting the fascination with true crime.</p>
+            </div>
+        </div>
+
+        <div class="section" id="reason2">
+            <h2>Reason 2: Personal Safety</h2>
+            <p>True crime also awakens a sense of personal safety. By learning about crimes and how to prevent them, people can feel more empowered and prepared to protect themselves and their loved ones. This quest for knowledge is not just about understanding crime itself but also about how to prevent it.</p>
+            <p>Watching true crime documentaries can provide valuable insights into the tactics criminals use, as well as warning signs that can help identify dangerous situations before they escalate. This becomes a tool for self-preservation, offering the audience a sense of control over their safety.</p>
+            <button class="nav-button" onclick="showExample('example2')">Example</button>
+            <div class="example-content" id="example2">
+                <img src="razon 2 ejemplo 2.jpg" alt="Example of The Keepers" class="example-image">
+                <p>A prominent example is the documentary "The Keepers," which investigates the murder of Sister Cathy Cesnik and the possible connection to a sexual abuse scandal at the Catholic school where she taught. Through interviews with friends, family, and former students, the documentary not only narrates the tragedy of the crime but also examines the cover-up and the struggle for justice. Viewers not only get involved in the story but also receive information on how similar situations can be prevented in the future, strengthening their sense of security and control.</p>
+            </div>
+        </div>
+
+        <div class="section" id="reason3">
+            <h2>Reason 3: Emotional Connection</h2>
+            <img src="razon-3.jpg" class="reason-image">
+            <p>Finally, true crime can evoke a deep emotional connection. When watching or reading about these cases, viewers often feel empathy for the victims and their families. This connection can be powerful as it reminds us of the fragility of life and the importance of justice. True crime cases can generate a strong sense of community among those seeking justice for victims and their loved ones.</p>
+            <p>The storytelling of these crime narratives often resonates in the hearts of viewers, leading them to reflect on life, death, and justice. This shared experience can unite people in the quest for a deeper understanding of human nature.</p>
+        </div>
+
+        <div class="section" id="conclusion">
+            <h2>Conclusion</h2>
+            <div class="conclusion-images">
+                <img src="conclusion-1.jpg" alt="Conclusion Image 1" class="conclusion-image">
+                <img src="conclusion-2.jpg" alt="Conclusion Image 2" class="conclusion-image">
+            </div>
+            <p>In conclusion, the fascination with true crime stems from a combination of human curiosity, the quest for personal safety, and emotional connection. By exploring these narratives, we not only satisfy our curiosity but also seek to understand the darker side of humanity and the realities behind the stories. True crime invites us to reflect on morality, justice, and the complexities of the human experience.</p>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <textarea id="comment" rows="4" placeholder="Leave your comment here..."></textarea>
+            <button id="submitComment">Submit</button>
+        </div>
+
+        <footer>
+            <p>© 2024 True Crime Analysis. All rights reserved.</p>
+            <p>BY Mateo Andres Martin Corredor</p>
+        </footer>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        function showExample(exampleId) {
+            const examples = document.querySelectorAll('.example-content');
+            examples.forEach(example => {
+                example.style.display = 'none';
+            });
+            document.getElementById(exampleId).style.display = 'block';
+        }
+
+        // Show the introduction section by default
+        showSection('introduction');
+    </script>
+</body>
+</html>
+
